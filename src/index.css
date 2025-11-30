@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Romantic pastel color palette */
+    --background: 340 100% 98%;
+    --foreground: 330 30% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 330 30% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 30% 25%;
+
+    /* Soft pink primary */
+    --primary: 340 82% 76%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Lavender secondary */
+    --secondary: 270 50% 85%;
+    --secondary-foreground: 330 30% 25%;
+
+    /* Peach muted */
+    --muted: 30 100% 90%;
+    --muted-foreground: 330 20% 45%;
+
+    /* Soft accent */
+    --accent: 320 70% 88%;
+    --accent-foreground: 330 30% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 340 50% 92%;
+    --input: 340 50% 92%;
+    --ring: 340 82% 76%;
+
+    --radius: 1rem;
+
+    /* Romantic gradients */
+    --gradient-romantic: linear-gradient(135deg, hsl(340 82% 76%), hsl(270 50% 85%), hsl(30 100% 90%));
+    --gradient-dreamy: linear-gradient(180deg, hsl(340 100% 98%), hsl(270 100% 98%));
+    --gradient-soft: linear-gradient(45deg, hsl(340 82% 76% / 0.1), hsl(270 50% 85% / 0.1));
+    
+    /* Shadows */
+    --shadow-romantic: 0 10px 40px hsl(340 82% 76% / 0.2);
+    --shadow-soft: 0 4px 20px hsl(340 82% 76% / 0.15);
+    
+    /* Transitions */
+    --transition-smooth: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
