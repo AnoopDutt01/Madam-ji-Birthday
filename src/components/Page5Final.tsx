@@ -16,7 +16,10 @@ const Page5Final = ({ phoneNumber, onRestart }: Page5FinalProps) => {
   }, []);
 
   const handleWhatsApp = () => {
-    window.open(`https://wa.me/${phoneNumber}?text=Thank you for the beautiful Gift! 💖`, "_blank");
+    window.open(
+      `https://wa.me/9460381886?text=Thank you for the beautiful Gift! 💖`,
+      "_blank"
+    );
   };
 
   return (
