@@ -5,8 +5,8 @@ import { Slider } from "@/components/ui/slider";
 
 // Note: Add your music files to public/music folder
 const playlist = [
-  "/music/Achchi Lagti Ho.mp3",
   "/music/Fakira.mp3",
+  "/music/Achchi Lagti Ho.mp3",  
   "/music/Phir Mohabbat.mp3",
   "/music/Teri Meri Kahaani.mp3"  
 ];
